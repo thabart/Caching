@@ -18,17 +18,18 @@
   },
   "frameworks": {
     "net451": {
-      "StackExchange.Redis.StrongName": "1.0.488"
-    },
-    "dnxcore50": {
-      "dependencies": {
-        "StackExchange.Redis.StrongName": "1.1.553-alpha"
+      "StackExchange.Redis.StrongName": "1.0.488",
+      "frameworkAssemblies": {
+        "System.Runtime": { "type": "build" }
       }
     },
-    "dotnet5.5": {
+    "netstandard1.2": {
       "dependencies": {
-        "StackExchange.Redis.StrongName": "1.1.553-alpha"
-      }
+        "StackExchange.Redis.StrongName": "1.1.572-alpha"
+      },
+      "imports": [
+        "dnxcore50"
+      ]
     }
   }
 }
