@@ -9,9 +9,28 @@
   },
   "testRunner": "xunit",
   "frameworks": {
-    "net451": {
+    "netcoreapp1.0": {
       "dependencies": {
-        "Moq": "4.2.1312.1622"
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0-*",
+          "type": "platform"
+        },
+        "System.Diagnostics.Process": "4.1.0-*",
+        "moq.netcore": "4.4.0-beta8"
+      },
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ]
+    },
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Runtime": "",
+        "System.Threading.Tasks": ""
+      },
+      "dependencies": {
+        "moq": "4.2.1312.1622",
+        "xunit.runner.console": "2.1.0"
       }
     }
   }
